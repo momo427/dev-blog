@@ -1,6 +1,6 @@
 [
     {
-      "description": "Test Comment.",
+      "comment_text": "Test Comment.",
       "date_created": "05/24/2021",
       "post_id": 1,
       "user_id": 2
