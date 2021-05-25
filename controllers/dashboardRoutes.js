@@ -21,10 +21,10 @@ router.get('/', withAuth, async (req,res) => {
     }
 });
 
-router.get('/newpost', withAuth, (req, res) => {
+router.get('/create', withAuth, (req, res) => {
     try {
         if(req.session.logged_in) {
-            res.render('new-post',{
+            res.render('create-post',{
                 logged_in: req.session.logged_in
             });
             return;
@@ -43,7 +43,7 @@ router.get("/edit/:id", withAuth, async (req, res) => {
             include: [{ model: User }],
         });
         const post = postData.get({ plain: true });
-        res.render('edit', {
+        res.render('edit-post', {
             post,
             logged_in: req.session.logged_in
         });
