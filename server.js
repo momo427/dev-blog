@@ -17,8 +17,6 @@ const PORT = process.env.PORT || 3006;
 const sess = {
   secret: 'super secret',
   cookie: {
-        // Session will automatically expire in 10 minutes
-        expires: 10 * 60 * 1000
   },
   resave: false,
   rolling: true,

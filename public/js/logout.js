@@ -18,7 +18,7 @@ function startIdleTimer() {
     // Increment the timer seconds 
     currentSeconds++;
     if (currentSeconds > 60) {
-        logOut();
+        logout();
     }
 }
 async function logout() {
